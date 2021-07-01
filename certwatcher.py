@@ -42,7 +42,7 @@ def print_callback(message, context):
                         sys.stdout.flush()
 
                         # Write results to a file
-                        with open("newdomains.txt", "a+") as f:
+                        with open("/opt/tools/certwatch/new_domains.txt", "a+") as f:
                             f.write(f"{matches}\n")
                 except:
                     pass
