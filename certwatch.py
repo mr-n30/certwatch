@@ -17,7 +17,7 @@ parser.add_argument("-d", "--domains", help="File containing a list of domains t
 parser.add_argument("-c", "--config", help="YAML file containing config information for login and other", required=True)
 
 args        = parser.parse_args()
-config      = parser.config
+config      = args.config
 domains     = args.domains
 output_file = args.output
 
