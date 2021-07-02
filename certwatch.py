@@ -11,7 +11,7 @@ import certstream
 from email.message import EmailMessage
 
 # Parse command line arguments
-parser = argparse.ArgumentParse(description="Watch for new subdomains added to a target(s)")
+parser = argparse.ArgumentParser(description="Watch for new subdomains added to a target(s)")
 parser.add_argument("-o", "--output", help="File to write the new subdomains to", required=True)
 parser.add_argument("-d", "--domains", help="File containing a list of domains to watch for", required=True)
 parser.add_argument("-c", "--config", help="YAML file containing config information for login and other", required=True)
