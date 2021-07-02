@@ -67,14 +67,15 @@ def sendmail(results):
     final_results = []
     final_results = check_if_hostname_is_valid(results)
 
-    for result in final_results:
-        msg = msg + result
+    if len(final_results) > 0:
+        for result in final_results:
+            msg = msg + result
 
-    # Send the message
-    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
-        s.ehlo()
-        s.login(username, password)
-        s.sendmail(username, recipient, msg)
+        # Send the message
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
+            s.ehlo()
+            s.login(username, password)
+            s.sendmail(username, recipient, msg)
 
 # Check for new changes/subdomains
 def check_for_new_changes(matches):
