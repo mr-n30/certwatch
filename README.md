@@ -1,4 +1,5 @@
 # certwatch
+**IMPORTANT**
 ```html
 Before running watcher.sh you must run the initial subdomain scan e.g:
 
