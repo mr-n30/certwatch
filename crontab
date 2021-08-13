@@ -1,0 +1,3 @@
+0 * * * * /root/certwatch/takeover.sh
+0 0 * * * /root/certwatch/tool-updater.sh
+*/3 * * * * /root/certwatch/nuclei-templates-checker.py /root/certwatch/nuclei-version.txt
