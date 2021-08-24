@@ -1,3 +1,5 @@
-0 * * * * /root/certwatch/takeover.sh
+# This is for subdomain takeover scans (Didn't find anything really, but then again we only tried for about less than a month or so.)
+#0 * * * * /root/certwatch/takeover.sh
+5 0 * * * /root/certwatch/uniqq.sh
 0 0 * * * /root/certwatch/tool-updater.sh
 */3 * * * * /root/certwatch/nuclei-templates-checker.py /root/certwatch/nuclei-version.txt
